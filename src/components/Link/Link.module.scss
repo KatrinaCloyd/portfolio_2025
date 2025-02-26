@@ -1,17 +1,29 @@
 .link {
-    border: var(--tan-lt) solid 1px;
+    color: var(--maroon);
     background-color: var(--white);
     inline-size: fit-content;
+    display: inline-flex;
+    gap: 0px;
+    transition: all .2s ease-in-out;
+    text-decoration: underline;
+    text-underline-offset: 4px;
     
-    display: flex;
-
     svg {
-        inline-size: 20px;
-        inline-size: 50px;
-        border: red solid 1px;
+        opacity: 0;
+        inline-size: 15px;
+        inline-size: 15px;
+        transition: all .2s ease-in-out;
         path {
-            stroke: black;
+            stroke: var(--maroon);
+            stroke-width: 1px;
             stroke-linecap: round;
+        }
+    }
+
+    &:hover {
+        gap: 4px;
+        svg {
+            opacity: 1;
         }
     }
 }
