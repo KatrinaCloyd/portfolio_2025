@@ -11,19 +11,37 @@
   }
 }
 
+.note {
+  color: var(--maroon);
+  font-size: 14px;
+}
 
-@media (prefers-color-scheme: dark) {
-  .page {
+.heading {
+  font-size: 40px;
+}
 
+.aboutWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  inline-size: 100%;
+  padding-block-end: 50px;
+
+  img {
+    max-inline-size: 100%;
+    width: 350px;
   }
-}
-
-
-
-@media (max-width: 600px) {
-
-}
-
-@media (prefers-color-scheme: dark) {
-
+  
+  h1 {
+    margin-top: 0;
+  }
+  
+  @include page.tab {
+    gap: 100px;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    img {
+      width: 450px;
+    }
+  }
 }
