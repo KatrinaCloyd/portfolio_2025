@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import React, { useEffect, useRef, useState } from 'react'
 import styles from './Navigation.module.scss';
-import { BURGER, CLOSE } from './Icons';
+import { BURGER, CLOSE } from '../Icons';
 import { usePathname } from 'next/navigation';
 
 export default function Navigation() {
