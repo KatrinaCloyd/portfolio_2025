@@ -1,0 +1,29 @@
+@use './utils.scss' as page;
+
+.page {
+  padding-inline: 20px;
+  padding-block: 120px;
+  max-inline-size: 1400px;
+  margin: auto;
+  @include page.tab {
+    padding-block: 160px;
+    padding-inline: 40px;
+  }
+}
+
+
+@media (prefers-color-scheme: dark) {
+  .page {
+
+  }
+}
+
+
+
+@media (max-width: 600px) {
+
+}
+
+@media (prefers-color-scheme: dark) {
+
+}

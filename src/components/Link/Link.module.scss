@@ -1,0 +1,17 @@
+.link {
+    border: var(--tan-lt) solid 1px;
+    background-color: var(--white);
+    inline-size: fit-content;
+    
+    display: flex;
+
+    svg {
+        inline-size: 20px;
+        inline-size: 50px;
+        border: red solid 1px;
+        path {
+            stroke: black;
+            stroke-linecap: round;
+        }
+    }
+}

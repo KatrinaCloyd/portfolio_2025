@@ -1,0 +1,160 @@
+@use '../../styles/utils.scss' as page;
+
+.base {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-block: 20px;
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+    background-color: var(--white);
+    inline-size: calc(100vw - 40px);
+    max-inline-size: 1316px;
+    border-bottom: 1px solid var(--maroon);
+    padding-inline: 5px;
+
+    &::before {
+        position: absolute;
+        inline-size: 100%;
+        block-size: 1px;
+        background-color: var(--maroon);
+        content: '';
+        bottom: 3px;
+        left: 0;
+    }
+;    
+    @include page.tab {
+        inline-size: calc(100vw - 80px);
+        padding-block: 40px;
+    }
+}
+
+.logo {
+    max-inline-size: 150px;
+    aspect-ratio: 2.35/1;
+    
+    @include page.tab {
+        aspect-ratio: 9/1;
+        max-inline-size: 420px;
+    }
+}
+
+.navWrapper {
+    position: fixed;
+}
+
+.nav {
+    z-index: 15;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: var(--white);
+    padding: 175px 40px 100px 40px;
+    font-family: var(--heading-font);
+    color: var(--tan-dk);
+    inline-size: calc(100vw - 40px);
+
+    //TODO add animation in and out
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+
+    li {
+        list-style-position: none;
+        font-size: 30px;
+    }
+
+    a {
+        transition: all .2s ease-in-out;
+        text-decoration-thickness: 0px;
+        text-decoration: underline;
+        text-decoration-thickness: 1.5px;
+        text-underline-offset: 4px;
+        text-decoration-color: transparent;
+        text-underline-offset: 4px;
+        &:hover {
+            text-decoration-color: var(--maroon);
+            color: var(--maroon);
+        }
+
+        &[aria-disabled] {
+            pointer-events: none;
+            color: var(--maroon);
+        }
+    }
+
+    @include page.tab {
+        top: 40px;
+        right: 10vw;
+        padding: 40px;
+        inline-size: 300px;
+
+        ul {
+            gap: 30px;
+            align-items: flex-start;
+        }
+    }
+}
+
+.blur {
+    z-index: 12;
+    position: fixed;
+    top: 0;
+    left: 0;
+    content: '';
+    inline-size: 100vw;
+    block-size: 100vh;
+    background-color: var(--fill);
+    backdrop-filter: blur(2px);
+    cursor: url('/closeCursor.svg'), auto;
+
+    //TODO add animation in and out
+}
+
+.icon {
+    transition: all .2s ease-in-out;
+    svg {
+        path {
+            stroke: var(--tan);
+            stroke-linecap: round;
+            stroke-width: .5px;
+            transition: all .2s ease-in-out;
+        }
+    }
+
+    &:hover,
+    &:focus {
+        svg path {
+            stroke: var(--maroon);
+        } 
+    }
+}
+
+.burger {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    justify-content: center;
+    @include page.tab {
+        &:hover {
+            gap: 10px;
+        }
+    }
+}
+
+.close {
+    position: absolute;
+    top: 60px;
+    right: calc(50% - 23px);
+    @include page.tab {
+        right: 40px;
+        top: 40px;
+    }
+}
+
