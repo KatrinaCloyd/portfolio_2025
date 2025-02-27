@@ -110,8 +110,7 @@
     block-size: 100vh;
     background-color: var(--fill);
     backdrop-filter: blur(2px);
-    cursor: url('/closeCursor.svg') 20 20,
-        url('/closeCursor.png') 20 20, auto;
+    cursor: url('/closeCursor.svg') 20 20, auto;
 
     //TODO add animation in and out
 }
