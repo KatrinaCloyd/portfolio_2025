@@ -1,8 +1,10 @@
  
 import type { Metadata } from "next";
 
-import Link from "@comp/Link/Link";
 import Navigation from "@comp/Navigation/Navigation";
+import Link from "@comp/Link/Link";
+import CardGrid from "@comp/CardGrid/CardGrid";
+import { TOOLS } from "@/data/ToolBelt";
 
 import styles from "../../styles/page.module.scss";
 
@@ -49,7 +51,7 @@ export default function About() {
           <div>
             <picture>
                 <source srcSet="/Katrina_mobile.png 503w" media="(max-width: 1000px)"/>
-                <source srcSet="/Katrina.png 900"/>
+                <source srcSet="/Katrina.png 900w"/>
                 <img
                   src="/Katrina.png"
                   alt='Headshot of Katrina Cloyd' loading="eager"
@@ -62,7 +64,7 @@ export default function About() {
           </div>
         </div>
         <h2 className={styles.heading}>My Tools</h2>
-        <p className={styles.note}>Placeholder for tools cards.</p>
+        <CardGrid list={TOOLS}/>
         <br />
       </main>
     </div>
