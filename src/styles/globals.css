@@ -77,13 +77,15 @@ h2 {
 
 h3 {
   font-size: 20px;
+  font-family: var(--body-font);
+  color: var(--tan-dk);
 }
 
 h4 {
   font-size: 14px;
   margin-block: 10px;
   font-weight: 500;
-  color: var(--tan);
+  color: var(--tan-dk);
 }
 
 p {
