@@ -58,7 +58,7 @@ export default function Navigation() {
         <nav className={styles.base}>
             <Link href='/'>
             <picture>
-                <source srcSet="/name_mobile.png 236w" media="(max-width: 1000px)"/>
+                <source srcSet="/Name_mobile.png 236w" media="(max-width: 1000px)"/>
                 <source srcSet="/name.png 644w"/>
                 <img
                     src="/name.png"
