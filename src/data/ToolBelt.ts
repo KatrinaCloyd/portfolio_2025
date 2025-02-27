@@ -5,6 +5,7 @@ export const TOOLS = [
             'TypeScript',
             'JavaScript',
             'HTML5',
+            'CSS3',
             'JSX / TXS'
         ],
     },
@@ -22,7 +23,6 @@ export const TOOLS = [
     {
         heading: 'Styling',
         items: [
-            'CSS3',
             'SASS',
             'Styled Components',
             'Material UI',
