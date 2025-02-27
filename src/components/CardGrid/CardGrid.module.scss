@@ -1,0 +1,64 @@
+@use '../../styles/utils.scss' as page;
+
+.base {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-block-start: 20px;
+    
+    @include page.tab {
+        gap: 40px;
+    }
+}
+
+.card {
+    border: 1px solid var(--tan);
+    padding: 10px;
+    inline-size: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    h3 {
+        inline-size: 140px;
+        min-inline-size: 140px;
+        border-inline-end: var(--tan) solid 1px;
+        margin-block: 0;
+        display: flex;
+        padding-inline-end: 10px;
+    }
+    
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+    
+    @media (min-width: 450px) {
+        padding: 20px;
+        inline-size: calc((100% - 20px)/2);
+        flex-direction: column;
+        gap: 20px;
+        
+        h3 {
+            inline-size: unset;
+            block-size: 60px;
+            border-inline-end: none;
+            border-block-end: var(--tan) solid 1px;
+            padding-block-end: 20px;
+            align-items: center;
+        }
+    }
+    
+    @include page.tab {
+        inline-size: calc((100% - 120px)/4);
+        padding: 20px;
+    }
+
+    @include page.dt {
+        h3 {
+            block-size: unset;
+        }
+    }
+}

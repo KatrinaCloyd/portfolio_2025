@@ -13,6 +13,7 @@
     max-inline-size: 1316px;
     border-bottom: 1px solid var(--maroon);
     padding-inline: 5px;
+    box-shadow: 5px 0 0 var(--white), -5px 0 0 var(--white);
 
     &::before {
         position: absolute;
@@ -109,7 +110,8 @@
     block-size: 100vh;
     background-color: var(--fill);
     backdrop-filter: blur(2px);
-    cursor: url('/closeCursor.svg'), auto;
+    cursor: url('/closeCursor.svg') 20 20,
+        url('/closeCursor.png') 20 20, auto;
 
     //TODO add animation in and out
 }
