@@ -17,6 +17,7 @@
 
     & [aria-current=step] {
         opacity: 1;
+        z-index: 1;
     }
 
     @include page.tab {
@@ -104,6 +105,7 @@
     top: 34%;
     left: 0;
     right: 0;
+    z-index: 5;
 
     button {
         border-radius: 100px;
