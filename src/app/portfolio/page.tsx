@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Navigation from "@/components/Navigation/Navigation";
-
 import styles from "../../styles/page.module.scss";
 
 export const metadata: Metadata = {

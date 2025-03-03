@@ -1,0 +1,178 @@
+@use '../../styles/utils.scss' as page;
+
+.base {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    position: relative;
+}
+
+.slideWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    block-size: 520px;
+
+    & [aria-current=step] {
+        opacity: 1;
+        z-index: 1;
+    }
+
+    @include page.tab {
+        block-size: 375px;
+    }
+
+}
+
+.slide {
+    background-color: var(--white);
+    border: solid 1px var(--tan-lt);
+    filter: var(--shadow);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    inline-size: 100%;
+    transition: all .5s ease-in-out;
+    min-block-size: 520px;
+
+    .imgWrapper {
+        inline-size: 100%;
+    }
+
+    img {
+        border: var(--tan-lt) solid 1px;
+        object-fit: contain;
+        max-block-size: 170px;
+        max-inline-size: 100%;
+    }
+
+    div {
+        inline-size: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+
+        p,
+        h3 {
+            padding: 0;
+            margin: 0;
+        }
+
+        h3 {
+            text-align: center;
+        }
+    }
+
+    @include page.tab {
+        flex-direction: row;
+        padding: 40px;
+        gap: 100px;
+        min-block-size: 350px;
+
+        .imgWrapper,
+        div {
+            inline-size: 50%;
+            align-items: flex-start;
+
+            h3 {
+                text-align: left;
+            }
+        }
+
+        img {
+            border: var(--tan-lt) solid 1px;
+            max-block-size: unset;
+            inline-size: 100%;
+        }
+    }
+}
+
+.buttonWrapper {
+    display: flex;
+    max-inline-size: 100%;
+    inline-size: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 34%;
+    left: 0;
+    right: 0;
+    z-index: 5;
+
+    button {
+        border-radius: 100px;
+        background-color: var(--tan-lt);
+        padding-block-start: 4px;
+        outline: 1px solid transparent;
+        outline-offset: 0;
+        transition: all .5s ease-in-out;
+
+        svg {
+            inline-size: 18px;
+
+            path {
+                stroke: var(--tan-dk);
+            }
+        }
+    }
+
+    button:hover,
+    button:focus {
+        svg path {
+            stroke: var(--maroon);
+        }
+    }
+
+    button:focus {
+        outline: 1px solid var(--maroon);
+    }
+
+    .prevBtn {
+        transform: rotate(180deg);
+    }
+
+    @include page.tab {
+        top: 40%;
+    }
+}
+
+.indicators {
+    display: flex;
+    gap: 10px;
+    inline-size: 100%;
+    justify-content: center;
+
+    button::before {
+        inline-size: 50px;
+        block-size: 2px;
+        background-color: var(--tan);
+        content: "";
+        display: block;
+        position: relative;
+        transition: all .5s ease-in-out;
+        border-radius: 100px;
+        outline: 1px solid transparent;
+    }
+
+    .active::before,
+    button:hover::before,
+    button:focus::before {
+        background-color: var(--maroon);
+    }
+
+    button:focus::before {
+        outline: 1px solid var(--maroon);
+    }
+
+    button:focus {
+        outline: none;
+    }
+}
