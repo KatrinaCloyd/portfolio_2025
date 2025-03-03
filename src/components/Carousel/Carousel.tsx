@@ -30,6 +30,7 @@ export default function Carousel({ projects }: CarouselProps) {
         console.log(current);
     }, [current])
     //TODO safari tab order not getting prev next buttons or indicator buttons
+    //TODO add html handling to add italics to WWDITS title
 
     return (
         <div className={styles.base}>
