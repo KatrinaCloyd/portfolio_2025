@@ -1,11 +1,8 @@
- 
 import type { Metadata } from "next";
-
 import Navigation from "@comp/Navigation/Navigation";
 import Link from "@comp/Link/Link";
 import CardGrid from "@comp/CardGrid/CardGrid";
 import { TOOLS } from "@/data/ToolBelt";
-
 import styles from "../../styles/page.module.scss";
 
 export const metadata: Metadata = {
@@ -50,21 +47,21 @@ export default function About() {
           </div>
           <div>
             <picture>
-                <source srcSet="/Katrina_mobile.png 503w" media="(max-width: 1000px)"/>
-                <source srcSet="/Katrina.png 900w"/>
-                <img
-                  src="/Katrina.png"
-                  alt='Headshot of Katrina Cloyd' loading="eager"
-                />
+              <source srcSet="/Katrina_mobile.png 503w" media="(max-width: 1000px)" />
+              <source srcSet="/Katrina.png 900w" />
+              <img
+                src="/Katrina.png"
+                alt='Headshot of Katrina Cloyd' loading="eager"
+              />
             </picture>
-            <p>View my full <Link text='Resume' url="/KatrinaCloyd_2025.pdf" external/></p>
-            <p>Email me at <Link text='katrinamcloyd@gmail.com' url="mailto:katrinamcloyd@gmail.com" external/></p>
-            <p>View my code on <Link text='GitHub' url="https://github.com/KatrinaCloyd" external/></p>
-            <p>Connect with me on <Link text='LinkedIn' url="https://www.linkedin.com/in/katrinacloyd/" external/></p>
+            <p>View my full <Link text='Resume' url="/KatrinaCloyd_2025.pdf" external /></p>
+            <p>Email me at <Link text='katrinamcloyd@gmail.com' url="mailto:katrinamcloyd@gmail.com" external /></p>
+            <p>View my code on <Link text='GitHub' url="https://github.com/KatrinaCloyd" external /></p>
+            <p>Connect with me on <Link text='LinkedIn' url="https://www.linkedin.com/in/katrinacloyd/" external /></p>
           </div>
         </div>
         <h2 className={styles.heading}>My Tools</h2>
-        <CardGrid list={TOOLS}/>
+        <CardGrid list={TOOLS} />
         <br />
       </main>
     </div>

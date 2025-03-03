@@ -7,21 +7,21 @@
     transition: all .2s ease-in-out;
     text-decoration: underline;
     text-underline-offset: 4px;
-    
+
     svg {
         opacity: 0;
         inline-size: 15px;
         inline-size: 15px;
-        transition: all .2s ease-in-out;
+
         path {
             stroke: var(--maroon);
-            stroke-width: 1px;
-            stroke-linecap: round;
         }
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
         gap: 4px;
+
         svg {
             opacity: 1;
         }

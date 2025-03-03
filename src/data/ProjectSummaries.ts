@@ -48,7 +48,7 @@ export const PROJECT_SUMMARIES = [
         slug: '/vampire-match',
         previewImg: 'vamp_preview.png',
         company: 'Vampire Match',
-        companySummary: 'A fun little memory card match game based on the movie and television series <span>What We Do In The Shadows</span>.',
+        companySummary: 'A fun little memory card match game based on the movie and television series What We Do In The Shadows.',
         projectSummary: 'Can you get the high score?',
         design: false,
         dev: true,

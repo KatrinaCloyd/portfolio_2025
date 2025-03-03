@@ -1,13 +1,14 @@
-import Link from 'next/link';
 import React from 'react'
-import { LinkProps } from './types'
-import styles from './Link.module.scss';
+import type { LinkProps } from './types'
+import Link from 'next/link';
 import { LINK_ARROW, EXTERNAL_LINK } from '../Icons';
+import styles from './Link.module.scss';
 
 export default function CustomLink({
   text,
   url,
   external = false,
+  tabable = true,
 }: LinkProps) {
   if (!url || !text) { return };
 
@@ -16,6 +17,7 @@ export default function CustomLink({
       href={url}
       rel={external ? 'noopener noreferrer' : undefined}
       target={external ? '_blank' : undefined}
+      tabIndex={!!tabable ? 0 : -1}
     >
       {text}
       {!!external && EXTERNAL_LINK}
