@@ -1,9 +1,9 @@
 'use client'
-import Link from 'next/link'
 import React, { useEffect, useRef, useState } from 'react'
-import styles from './Navigation.module.scss';
-import { BURGER, CLOSE } from '../Icons';
 import { usePathname } from 'next/navigation';
+import Link from 'next/link'
+import { BURGER, CLOSE } from '../Icons';
+import styles from './Navigation.module.scss';
 
 export default function Navigation() {
     const $menu = useRef<HTMLDivElement | null>(null);
@@ -12,24 +12,24 @@ export default function Navigation() {
     const pathname = usePathname();
 
     const listenClickOutside: EventListener = e => {
-		if ($menu.current && !$menu.current.contains(e.target as Node)) {
-			setNavOpen(false);
-		}
-	};
+        if ($menu.current && !$menu.current.contains(e.target as Node)) {
+            setNavOpen(false);
+        }
+    };
 
-    const listenKeystroke = (e: KeyboardEvent)=> {
-		if (e.key === 'Escape') {
-			setNavOpen(false);
-		}
-	};
+    const listenKeystroke = (e: KeyboardEvent) => {
+        if (e.key === 'Escape') {
+            setNavOpen(false);
+        }
+    };
 
     const setHash = (hash: string) => {
         setNavOpen(false);
         setPath(hash);
     }
-    
+
     useEffect(() => {
-        if (typeof window !== "undefined" ) {
+        if (typeof window !== "undefined") {
             const fullPath = pathname + window.location.hash;
             setPath(fullPath);
         }
@@ -37,14 +37,14 @@ export default function Navigation() {
 
 
     // TODO trap keyboard tabbing to stay within nav when its open
-	useEffect(() => {
-        if(navOpen){
+    useEffect(() => {
+        if (navOpen) {
             document.addEventListener('click', listenClickOutside);
             document.addEventListener('keyup', listenKeystroke);
-            
+
             //TODO: fix body scroll lock when nav is open
             document.body.style.overflow = 'hidden'; // not working
-            
+
             return () => {
                 document.removeEventListener('click', listenClickOutside);
                 document.removeEventListener('keyup', listenKeystroke);
@@ -52,34 +52,34 @@ export default function Navigation() {
         } else {
             document.body.style.overflow = 'auto';
         }
-	}, [navOpen]);
+    }, [navOpen]);
 
     return (
         <nav className={styles.base}>
             <Link href='/'>
-            <picture>
-                <source srcSet="/Name_mobile.png 236w" media="(max-width: 1000px)"/>
-                <source srcSet="/name.png 644w"/>
-                <img
-                    src="/name.png"
-                    alt='Katrina Cloyd logo'
-                    className={styles.logo}
-                />
-            </picture>
+                <picture>
+                    <source srcSet="/Name_mobile.png 236w" media="(max-width: 1000px)" />
+                    <source srcSet="/name.png 644w" />
+                    <img
+                        src="/name.png"
+                        alt='Katrina Cloyd logo'
+                        className={styles.logo}
+                    />
+                </picture>
                 <span className='sr'>Home</span>
             </Link>
             <button
-                onClick={()=>setNavOpen((prev) => !prev)}
+                onClick={() => setNavOpen((prev) => !prev)}
                 className={`${styles.icon} ${styles.burger}`}
             >{BURGER}
                 <span className='sr'>Open Menu</span>
             </button>
-            {!!navOpen && 
+            {!!navOpen &&
                 <div className={styles.navWrapper}>
                     <div className={styles.blur}></div>
                     <div className={styles.nav} ref={$menu}>
                         <button
-                            onClick={()=>setNavOpen(false)}
+                            onClick={() => setNavOpen(false)}
                             className={`${styles.icon} ${styles.close}`}
                         >{CLOSE}
                             <span className='sr'>Close Menu</span>
@@ -89,14 +89,14 @@ export default function Navigation() {
                                 <Link href='/'
                                     aria-disabled={(path === '/') ? true : undefined}
                                     aria-current={path === '/' ? 'page' : undefined}
-                                    onClick={()=>setHash('/')}
+                                    onClick={() => setHash('/')}
                                 >Home</Link>
                             </li>
                             <li>
                                 <Link href='/#contact'
                                     aria-disabled={(path === '/#contact') ? true : undefined}
                                     aria-current={path === '/#contact' ? 'page' : undefined}
-                                    onClick={()=>setHash('/#contact')}
+                                    onClick={() => setHash('/#contact')}
                                 >Contact</Link>
                             </li>
                             <li>
@@ -113,7 +113,7 @@ export default function Navigation() {
                             </li>
                         </ul>
                     </div>
-                </div> 
+                </div>
             }
         </nav>
     )

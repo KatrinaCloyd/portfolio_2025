@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-
 import Link from "@comp/Link/Link";
 import Navigation from "@/components/Navigation/Navigation";
-
+import Carousel from "@comp/Carousel/Carousel";
+import { PROJECT_SUMMARIES } from "@/data/ProjectSummaries";
 import styles from "../styles/page.module.scss";
 
 export const metadata: Metadata = {
@@ -27,7 +27,7 @@ export default function Home() {
           or better: work with you.</p>
         <p>I work best at the intersection of polished code and great design.</p>
         <p>How can I help you get there, too?</p>
-        <p>More <Link text='About Me' url='/about'/></p>
+        <p>More <Link text='About Me' url='/about' /></p>
         <br />
         <br />
         <p className={styles.note}>Please excuse the bare bones... we are a hard working WIP right now!</p>
@@ -37,13 +37,13 @@ export default function Home() {
           testing, code reviews, QA, launch, trainings, documentation, and ongoing support!
         </p>
         <p>Here are a few of my favs.</p>
-        <p>View my full <Link text='Portfolio' url='/portfolio'/></p>
-        <p className={styles.note}>Placeholder for work Carousel!</p>
+        <p>View my full <Link text='Portfolio' url='/portfolio' /></p>
+        <Carousel projects={PROJECT_SUMMARIES} />
         <br />
         <h2 id='contact' className={styles.heading}>Contact</h2>
-        <p>Email me at <Link text='katrinamcloyd@gmail.com' url="mailto:katrinamcloyd@gmail.com" external/></p>
-        <p>See what I have been coding lately on my <Link text='GitHub' url="https://github.com/KatrinaCloyd" external/></p>
-        <p>Connect with me on <Link text='LinkedIn' url="https://www.linkedin.com/in/katrinacloyd/" external/></p>
+        <p>Email me at <Link text='katrinamcloyd@gmail.com' url="mailto:katrinamcloyd@gmail.com" external /></p>
+        <p>See what I have been coding lately on my <Link text='GitHub' url="https://github.com/KatrinaCloyd" external /></p>
+        <p>Connect with me on <Link text='LinkedIn' url="https://www.linkedin.com/in/katrinacloyd/" external /></p>
       </main>
     </div>
   );

@@ -11,7 +11,7 @@
 
   /* EFFECTS  */
   --shadow: drop-shadow(5px 5px 4px #E8E6E4);
-  
+
   /* BREAK POINTS  */
   --tablet: min-width:750px;
   --desktop: min-width:1050px;
@@ -60,7 +60,16 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3 {
+:focus {
+  outline-color: var(--maroon);
+  outline-width: thin;
+  outline-offset: 3px;
+  outline-style: solid;
+}
+
+h1,
+h2,
+h3 {
   font-family: var(--heading-font);
   margin-block: 10px;
   font-weight: 400;
@@ -96,23 +105,35 @@ p {
 }
 
 /* DO NOT USE */
-h5, h6 {
+h5,
+h6 {
   color: red;
 }
 
-ol, ul {
+ol,
+ul {
   list-style-position: inside;
   padding-inline-start: 4px;
 }
 
 button {
   cursor: pointer;
-	font: inherit;
-	background: none;
+  font: inherit;
+  background: none;
   min-inline-size: 45px;
   min-block-size: 45px;
   border: none;
   outline: none;
+}
+
+svg {
+  transition: all .2s ease-in-out;
+
+  path {
+    transition: all .2s ease-in-out;
+    stroke-width: 1px;
+    stroke-linecap: round;
+  }
 }
 
 /* SCREEN READER CONTENT */

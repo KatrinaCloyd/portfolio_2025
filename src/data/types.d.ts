@@ -36,7 +36,7 @@ export type ProjectSummary = {
     tools: string[],
 };
 
-export type ProjectList = Project[] | ProjectSummary[];
+export type ProjectList = ProjectSummary[];
 
 export type Tool = {
     heading: string;
