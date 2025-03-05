@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import type { CarouselProps } from './types'
 import CustomLink from '../Link/Link';
 import { LINK_ARROW } from '../Icons';
@@ -10,13 +10,11 @@ export default function Carousel({ projects }: CarouselProps) {
     const [current, setCurrent] = useState(0);
 
     const clickNext = () => {
-        console.log('clicked next', current);
         if (current === 4) {
             setCurrent(0);
         } else setCurrent(prev => prev + 1);
     };
     const clickPrevious = () => {
-        console.log('clicked prev', current);
         if (current === 0) {
             setCurrent(4);
         } else setCurrent(prev => prev - 1);
@@ -24,11 +22,8 @@ export default function Carousel({ projects }: CarouselProps) {
 
     const clickToSet = (item: number) => {
         setCurrent(item);
-    }
+    };
 
-    useEffect(() => {
-        console.log(current);
-    }, [current])
     //TODO safari tab order not getting prev next buttons or indicator buttons
     //TODO add html handling to add italics to WWDITS title
 
@@ -48,11 +43,13 @@ export default function Carousel({ projects }: CarouselProps) {
                             <h3>{project.company}</h3>
                             <p>{project.companySummary}</p>
                             <p>{project.projectSummary}</p>
-                            <CustomLink
-                                text='Project details coming soon'
-                                url='#'
-                                tabable={current === index ? true : false}
-                            />
+                            {project.slug ? (
+                                <CustomLink
+                                    text='Read More'
+                                    url={`portfolio${project.slug}`}
+                                    tabable={current === index ? true : false}
+                                />
+                            ) : <small>Project detail page coming soon.</small>}
                         </div>
                     </div>
                 ))}
