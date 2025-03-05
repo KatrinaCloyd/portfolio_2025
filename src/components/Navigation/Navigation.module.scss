@@ -77,8 +77,10 @@
         text-decoration-thickness: 1.5px;
         text-underline-offset: 4px;
         text-decoration-color: transparent;
+        outline: none;
 
-        &:hover {
+        &:hover,
+        &:focus {
             text-decoration-color: var(--maroon);
             color: var(--maroon);
         }

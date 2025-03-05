@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
-import Navigation from "@/components/Navigation/Navigation";
+import Navigation from "@comp/Navigation/Navigation";
+import ProjectGrid from "@comp/ProjectGrid/ProjectGrid";
 import styles from "../../styles/page.module.scss";
+import { PROJECT_SUMMARIES } from "@/data/ProjectSummaries";
 
 export const metadata: Metadata = {
   title: "Katrina Cloyd | My Portfolio",
@@ -17,7 +19,7 @@ export default function Portfolio() {
           Most I developed, some I served as a designer and developer, and others are
           a selection of some of my favorite design projects.
         </p>
-        <p className={styles.note}>Placeholder for project cards.</p>
+        <ProjectGrid projects={PROJECT_SUMMARIES} />
       </main>
     </div>
   );

@@ -133,6 +133,7 @@ svg {
     transition: all .2s ease-in-out;
     stroke-width: 1px;
     stroke-linecap: round;
+    stroke-linejoin: round;
   }
 }
 
