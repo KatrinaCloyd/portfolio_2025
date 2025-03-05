@@ -28,10 +28,6 @@ export default function Home() {
         <p>I work best at the intersection of polished code and great design.</p>
         <p>How can I help you get there, too?</p>
         <p>More <Link text='About Me' url='/about' /></p>
-        <br />
-        <br />
-        <p className={styles.note}>Please excuse the bare bones... we are a hard working WIP right now!</p>
-        <br />
         <h2 className={styles.heading}>Work</h2>
         <p>I have worked across teams in various roles contributing to website design, review, development,
           testing, code reviews, QA, launch, trainings, documentation, and ongoing support!
@@ -39,7 +35,6 @@ export default function Home() {
         <p>Here are a few of my favs.</p>
         <p>View my full <Link text='Portfolio' url='/portfolio' /></p>
         <Carousel projects={PROJECT_SUMMARIES} />
-        <br />
         <h2 id='contact' className={styles.heading}>Contact</h2>
         <p>Email me at <Link text='katrinamcloyd@gmail.com' url="mailto:katrinamcloyd@gmail.com" external /></p>
         <p>See what I have been coding lately on my <Link text='GitHub' url="https://github.com/KatrinaCloyd" external /></p>

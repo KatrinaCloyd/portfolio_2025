@@ -87,6 +87,7 @@ export default function Navigation() {
                         <ul>
                             <li>
                                 <Link href='/'
+                                    tabIndex={(path === '/') ? -1 : 0}
                                     aria-disabled={(path === '/') ? true : undefined}
                                     aria-current={path === '/' ? 'page' : undefined}
                                     onClick={() => setHash('/')}
@@ -94,6 +95,7 @@ export default function Navigation() {
                             </li>
                             <li>
                                 <Link href='/#contact'
+                                    tabIndex={(path === '/#contact') ? -1 : 0}
                                     aria-disabled={(path === '/#contact') ? true : undefined}
                                     aria-current={path === '/#contact' ? 'page' : undefined}
                                     onClick={() => setHash('/#contact')}
@@ -101,12 +103,14 @@ export default function Navigation() {
                             </li>
                             <li>
                                 <Link href='/about'
+                                    tabIndex={(path === '/about') ? -1 : 0}
                                     aria-disabled={(path === '/about') ? true : undefined}
                                     aria-current={path === '/about' ? 'page' : undefined}
                                 >About</Link>
                             </li>
                             <li>
                                 <Link href='/portfolio'
+                                    tabIndex={(path === '/portfolio') ? -1 : 0}
                                     aria-disabled={(path === '/portfolio') ? true : undefined}
                                     aria-current={path === '/portfolio' ? 'page' : undefined}
                                 >Portfolio</Link>
