@@ -28,13 +28,13 @@ export default function About() {
               gardening, freelancing, and pretty much trying it all. I needed a creative outlet and a combination
               avenues led me to design.
             </p>
-            <p>So I became a Graphic Designer. Years of that corporate life taught me so much but I still wanted more.
+            <p>I became a Graphic Designer. Years of that corporate life taught me so much but I still wanted more.
               I wanted a challenge, more variance in the day to day. A job that would keep me learning... And I wanted
               to know how to build my own site!
             </p>
-            <p>So I became a Software Engineer.And I finally feel like I have found my place. Now I get to problem solve
+            <p>So I became a Software Engineer. And I finally feel like I have found my place. Now I get to problem solve
               with new challenges every day. I get to be creative in my solutions and thinking. I get to continually
-              learn new things. And I get to make things beautiful.
+              learn new things. AND I get to make things beautiful.
             </p>
             <p>Not only all of that but I have found my sweet spot, spanning design and dev teams and helping to
               translate the details that often get lost, or create speed bumps. I can speak both “languages” and
