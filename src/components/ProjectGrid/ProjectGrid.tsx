@@ -3,13 +3,13 @@ import React, { useState } from 'react'
 import type { Filters, ProjectGridProps } from './types';
 import styles from './ProjectGrid.module.scss';
 import { DEV_ICON, DESIGN_ICON } from '../Icons';
+import CustomLink from '../Link/Link';
 
 export default function ProjectGrid({ projects }: ProjectGridProps) {
     const [filteredCards, setFilteredCards] = useState(projects);
     const [activeFilter, setFilter] = useState<Filters>()
 
     const filterCards = (filter: Filters) => {
-        console.log('clicked a button: ', filter);
 
         if (filter === 'Dev') {
             setFilter('Dev');
@@ -65,7 +65,12 @@ export default function ProjectGrid({ projects }: ProjectGridProps) {
                         </ul>
                         <p>{project.companySummary}</p>
                         <p>{project.projectSummary}</p>
-                        <small>Detailed project pages coming soon!</small>
+                        {project.slug ? (
+                            <CustomLink
+                                text='Read More'
+                                url={`portfolio${project.slug}`}
+                            />
+                        ) : <small>Detailed project page coming soon!</small>}
                     </article>
                 ))}
             </div>

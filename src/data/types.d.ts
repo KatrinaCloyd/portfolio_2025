@@ -26,7 +26,7 @@ export type ProjectPage = {
 
 export type ProjectSummary = {
     id: number,
-    slug: string,
+    slug: string | null,
     previewImg: string,
     company: string,
     companySummary: string,
