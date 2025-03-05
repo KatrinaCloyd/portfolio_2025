@@ -58,11 +58,11 @@ export default function ProjectGrid({ projects }: ProjectGridProps) {
                                 {project.design && DESIGN_ICON}
                             </div>
                         </div>
-                        <div className={styles.toolList}>
+                        <ul className={styles.toolList}>
                             {project.tools.map((tool, i) => (
-                                <h4 key={`Project-tool-${i}`}>{tool}</h4>
+                                <li key={`Project-tool-${i}`}>{tool}</li>
                             ))}
-                        </div>
+                        </ul>
                         <p>{project.companySummary}</p>
                         <p>{project.projectSummary}</p>
                         <small>Detailed project pages coming soon!</small>

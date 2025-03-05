@@ -128,8 +128,9 @@
     row-gap: 0;
     border-block-start: solid 1px var(--tan-lt);
     border-block-end: solid 1px var(--tan-lt);
+    list-style: none;
 
-    h4 {
+    li {
         position: relative;
         font-size: 12px;
         margin-block: 8px;
@@ -138,7 +139,7 @@
     @include page.dt {
         column-gap: 20px;
 
-        h4:not(:last-child):after {
+        li:not(:last-child):after {
             display: block;
             position: absolute;
             content: '';

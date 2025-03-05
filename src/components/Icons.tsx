@@ -34,7 +34,9 @@ export const EXTERNAL_LINK = (
 );
 
 export const DESIGN_ICON = (
-    <svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg"
+        role="graphics-symbol" aria-label="Design Work Icon"
+    >
         <rect x="0.859375" y="1" width="30.0563" height="21.4688" rx="2.86251" />
         <path d="M13.025 22.4688C13.025 26.7626 9.80469 27.836 9.80469 27.836H21.2547C21.2547 27.836 18.0344 26.7626 18.0344 22.4688" />
         <path d="M0.859375 6.72499C3.36407 5.29373 12.3094 3.86253 8.73127 11.0187C6.22657 16.0282 11.9516 19.2485 16.2454 15.3125" />
@@ -43,7 +45,9 @@ export const DESIGN_ICON = (
 );
 
 export const DEV_ICON = (
-    <svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg"
+        role="graphics-symbol" aria-label="Development Work Icon"
+    >
         <path d="M6.89054 4.57814L4.4082 7.06047L6.89054 9.54281" />
         <path d="M13.5548 9.54285L16.0371 7.06052L13.5548 4.57819" />
         <path d="M8.88086 9.58753L11.3408 4.57814" />
