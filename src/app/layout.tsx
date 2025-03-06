@@ -13,6 +13,8 @@ const geistMono = Montserrat({
   weight: ['400', '500'],
 });
 
+// TODO need to add a sitemap!
+
 export default function RootLayout({
   children,
 }: Readonly<{
