@@ -3,12 +3,13 @@ import Link from "@comp/Link/Link";
 import Navigation from "@/components/Navigation/Navigation";
 import Carousel from "@comp/Carousel/Carousel";
 import { PROJECT_SUMMARIES } from "@/data/ProjectSummaries";
+import { MainOGMetaData, METADATA } from "@/data/MetaData";
 import styles from "../styles/page.module.scss";
 
 export const metadata: Metadata = {
-  title: "Katrina Cloyd | Frontend Software Engineer",
-  description: `As a Frontend Software Engineer with ten as a graphic designer,
-    I specialize in React, Typescript, and bridging the gap between development and design.`,
+  title: METADATA.MAIN.title,
+  description: METADATA.HOME.description,
+  openGraph: MainOGMetaData,
 };
 
 export default function Home() {
