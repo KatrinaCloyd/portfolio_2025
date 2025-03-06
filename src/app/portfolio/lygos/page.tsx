@@ -14,6 +14,7 @@ export default function Portfolio() {
       <main>
         <h1>LYGOS</h1>
         <p>Detailed info about what I did for Lygos here!</p>
+        <p>TIME TO ADD SOME CONTENT!!!!!!! </p>
       </main>
     </div>
   );
