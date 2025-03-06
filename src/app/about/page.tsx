@@ -4,12 +4,14 @@ import Link from "@comp/Link/Link";
 import CardGrid from "@comp/CardGrid/CardGrid";
 import { TOOLS } from "@/data/ToolBelt";
 import styles from "../../styles/page.module.scss";
+import { AboutOGMetaData, METADATA } from "@/data/MetaData";
 
 export const metadata: Metadata = {
-  title: "Katrina Cloyd | About",
-  description: `A little more of my backstory if you are into that sort of thing.
-    Bottom line, I like creative technical work.`,
+  title: METADATA.ABOUT.title,
+  description: METADATA.ABOUT.description,
+  openGraph: AboutOGMetaData,
 };
+
 
 export default function About() {
   return (

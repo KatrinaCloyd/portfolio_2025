@@ -3,10 +3,12 @@ import Navigation from "@comp/Navigation/Navigation";
 import ProjectGrid from "@comp/ProjectGrid/ProjectGrid";
 import styles from "../../styles/page.module.scss";
 import { PROJECT_SUMMARIES } from "@/data/ProjectSummaries";
+import { METADATA, PortfolioOGMetaData } from "@/data/MetaData";
 
 export const metadata: Metadata = {
-  title: "Katrina Cloyd | My Portfolio",
-  description: "Here's the work. My favs. My best. And some just for fun (which are also my favs and best).",
+  title: METADATA.PORTFOLIO.title,
+  description: METADATA.PORTFOLIO.description,
+  openGraph: PortfolioOGMetaData,
 };
 
 export default function Portfolio() {
