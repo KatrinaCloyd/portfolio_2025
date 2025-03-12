@@ -1,0 +1,83 @@
+@use '../../styles/utils.scss' as page;
+
+.base {
+
+    svg {
+        display: inline-block;
+        inline-size: 35px;
+        margin-inline-start: 10px;
+
+        path,
+        rect {
+            stroke: var(--tan);
+        }
+    }
+
+    & > div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    h1 {
+        margin-block-end: 20px;
+    }
+
+}
+
+.wrapper {
+    border-block-start: solid 1px var(--tan-lt);
+    border-block-end: solid 1px var(--tan-lt);
+    padding-block: 10px;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 20px;
+        row-gap: 10px;
+        list-style: none;
+        inline-size: 100%;
+
+        li {
+            position: relative;
+            font-size: 12px;
+        }
+
+        @include page.tab {
+            inline-size: unset;
+
+            li:not(:last-child):after {
+                display: block;
+                position: absolute;
+                content: '';
+                inline-size: 3px;
+                block-size: 3px;
+                top: .5em;
+                right: -12px;
+                border-radius: 100px;
+                background-color: var(--tan);
+            }
+        }
+    }
+}
+
+.mobile {
+    display: block;
+
+    @include page.tab {
+        display: none;
+    }
+
+}
+
+.desktop {
+    display: none;
+
+    @include page.tab {
+        display: block;
+    }
+
+}
