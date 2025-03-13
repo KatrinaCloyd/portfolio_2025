@@ -46,7 +46,8 @@ body {
 }
 
 main {
-  /* border: blue solid 2px; */
+  display: flex;
+  flex-direction: column;
 }
 
 * {

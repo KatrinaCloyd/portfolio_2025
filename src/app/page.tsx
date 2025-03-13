@@ -18,16 +18,14 @@ export default function Home() {
       <Navigation />
       <main>
         <h1>Hello</h1>
-        <p>Welcome to my portfolio site.</p>
-        <p>I am a Fontend Software Engineer with a soft spot for great design.
-          With a background in the arts and graphic design, I have an eye for details and a drive to get them just right.</p>
-        <p>Here you can find examples of my work with detailed information, links, and more.</p>
-        <p>Explore,
-          make your self at home,
-          I&apos;d love to hear from you,
-          or better: work with you.</p>
-        <p>I work best at the intersection of polished code and great design.</p>
-        <p>How can I help you get there, too?</p>
+        <p>Welcome!</p>
+        <p>My name is Katrina, and I&apos;m a Fontend Software Engineer with a soft spot for great design.
+          With a background in the arts and graphic design, I have an eye for details and a drive to get them just right.
+        </p>
+        <p>Here you can find examples of my work with detailed information, links, and more. Explore, make your self at home,
+          I&apos;d love to hear from you, or better yet, work with you!</p>
+        <p>I work best at the intersection of polished code and great design. And I&apos;d love to help you get there too. </p>
+        <p>I am currently open to freelance work or full-time placement.</p>
         <p>More <Link text='About Me' url='/about' /></p>
         <h2 className={styles.heading}>Work</h2>
         <p>I have worked across teams in various roles contributing to website design, review, development,

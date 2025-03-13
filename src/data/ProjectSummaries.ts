@@ -1,7 +1,7 @@
 export const PROJECT_SUMMARIES = [
     {
         id: 1,
-        slug:null, // '/lygos',
+        slug: '/lygos',
         previewImg: 'lygos_preview.png',
         company: 'Lygos',
         companySummary: 'Sustainable bio-chemical innovation company.',

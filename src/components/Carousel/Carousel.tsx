@@ -37,7 +37,7 @@ export default function Carousel({ projects }: CarouselProps) {
                         className={styles.slide}
                     >
                         <div className={styles.imgWrapper}>
-                            <img src={project.previewImg} alt='bloop' />
+                            <img src={project.previewImg} alt={`${project.company} preview image`} />
                         </div>
                         <div>
                             <h3>{project.company}</h3>

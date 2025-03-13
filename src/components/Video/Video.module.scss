@@ -1,0 +1,44 @@
+.base {
+    cursor: pointer;
+    position: relative;
+
+    &:hover,
+    &:focus {
+        .status {
+            opacity: 1;
+        }
+    }
+}
+
+.status {
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: opacity .2s ease-in-out;
+    opacity: 0;
+
+    svg {
+        display: inline-block;
+        fill: var(--tan);
+        inline-size: 35px;
+
+        path,
+        rect {
+            stroke: var(--tan);
+        }
+    }
+
+}
+
+// button {}
+
+// button:hover {
+
+//     svg > path {
+//         stroke: var(--maroon);
+//     }
+// }

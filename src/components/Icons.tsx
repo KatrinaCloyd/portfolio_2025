@@ -58,3 +58,25 @@ export const DEV_ICON = (
         <path d="M4.4082 18.8907H22.2989" />
     </svg>
 );
+
+export const PLAY = (
+    <svg viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 1l9 6l-9 6l0 -12" />
+    </svg>
+);
+
+export const PAUSE = (
+    <svg viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 1l0 12l2 0l0 -12l-2 0" />
+        <path d="M9 1l0 12l2 0l0 -12l-2 0" />
+    </svg>
+);
+
+export const FULL_SCREEN = (
+    <svg viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 1l0 4l1 0l0 -3l3 0l0 -1l-4 0" />
+        <path d="M1 9l0 4l4 0l0 -1l-3 0l0 -3l-1 0" />
+        <path d="M9 1l4 0l0 4l-1 0l0 -3l-3 0l0 -1" />
+        <path d="M12 9l0 3l-3 0l0 1l4 0l0 -4l-1 0" />
+    </svg>
+);

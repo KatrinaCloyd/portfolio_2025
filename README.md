@@ -7,25 +7,26 @@ Please, explore the rest of my GitHub to see other projects, experiments, and cl
 
 View my professional experience on [LinkedIn](https://www.linkedin.com/in/katrinacloyd/). 
 
-But you can see more of that on the [live site](https://www/katrinacloyd.com).
+But you can see more of that kind of stuff on the [live site](https://www/katrinacloyd.com).
 
-You are here for the code.
+You are here for the code!
 
 
 ### Stack
-
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app) using the latest app router.
 Deployed on Vercel. Using Typescript and Sass for styling. 
 
 Aaaaand we're not done yet. Always working, always improving! 
 
 #### Sort term goals:
+- Project detail page content!
 - Auto play carousel on homepage of favorite projects
-- Tasteful but fun animations
+- Tasteful but fun animations (mainly on the nav)
 - Built in A11y checks
 
 #### Long term goals: 
  - Add Contentful integration for dynamic project detail pages
  - Will likely use GraphQL for data calls
+ - Fun 404 page
 
 
