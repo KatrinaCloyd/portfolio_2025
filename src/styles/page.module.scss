@@ -72,7 +72,8 @@
   & > * {
     inline-size: 100%;
 
-    img {
+    img,
+    video {
       inline-size: 100%;
     }
   }

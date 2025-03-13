@@ -4,6 +4,7 @@ import Navigation from "@comp/Navigation/Navigation";
 import CustomLink from "@comp/Link/Link";
 import Header from "@comp/Header/Header";
 import styles from '../../../styles/page.module.scss';
+import Video from "@/components/Video/Video";
 
 export const metadata: Metadata = {
   title: "Katrina Cloyd | Lygos Project Page",
@@ -75,10 +76,7 @@ export default function Portfolio() {
         </div>
 
         <div className={styles.twoColumn}>
-          <div>
-            {/* NEED TO ADD VIDEO */}
-            <img src='/lygos/Lygos_Img4(still)_DESKTOP.png' alt='Editor view of a test page in the Builder interface.' />
-          </div>
+          <Video video='/lygos/Lygos_Img4_DESKTOP.mov' poster='/lygos/Lygos_Img4(still)_DESKTOP.png' />
           <div className={styles.textBox}>
             <h2>Flexible site with guardrails</h2>
             <p>While Builder.io allows for full editor control in the interface, we decided that there needed to be limitations.
