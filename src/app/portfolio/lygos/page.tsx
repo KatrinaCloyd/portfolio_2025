@@ -27,6 +27,7 @@ export default function Portfolio() {
           <img
             src="/lygos/Lygos_Img1_DESKTOP.png"
             alt='Lygos company homepage'
+            loading="eager"
           />
         </picture>
 
@@ -174,7 +175,14 @@ export default function Portfolio() {
           </picture>
         </div>
 
-        <img className={styles.fullImg} src='/lygos/Lygos_Img7_DESKTOP.png' alt='Collage of new page component designs.' />
+        <picture className={styles.fullImg}>
+          <source srcSet="/lygos/Lygos_Img7_MOBILE.png 670w" media="(max-width: 700px)" />
+          <source srcSet="/lygos/Lygos_Img7_DESKTOP.png 1340w" />
+          <img
+            src="/lygos/Lygos_Img7_DESKTOP.png"
+            alt='Collage of new page component designs.'
+          />
+        </picture>
 
         <div className={styles.textOnly}>
           <p>Beyond development and design I also lead client trainings on the Builder.io interface, explained
