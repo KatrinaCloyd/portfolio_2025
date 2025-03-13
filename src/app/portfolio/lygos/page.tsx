@@ -21,7 +21,14 @@ export default function Portfolio() {
 
         <Header {...projectData} />
 
-        <img className={styles.fullImg} src='/lygos/Lygos_Img1_DESKTOP.png' alt='Lygos company homepage' />
+        <picture className={styles.fullImg}>
+          <source srcSet="/lygos/Lygos_Img1_MOBILE.png 670w" media="(max-width: 700px)" />
+          <source srcSet="/lygos/Lygos_Img1_DESKTOP.png 1340w" />
+          <img
+            src="/lygos/Lygos_Img1_DESKTOP.png"
+            alt='Lygos company homepage'
+          />
+        </picture>
 
         <div className={styles.textOnly}>
           <h2>Biotech company looking for a complete refresh</h2>
@@ -34,9 +41,14 @@ export default function Portfolio() {
         </div>
 
         <div className={styles.twoColumn}>
-          <div>
-            <img src='/lygos/Lygos_Img2_DESKTOP.png' alt='Collage of Lygos website at desktop and mobile sizes.' />
-          </div>
+          <picture>
+            <source srcSet="/lygos/Lygos_Img2_MOBILE.png 500w" media="(max-width: 700px)" />
+            <source srcSet="/lygos/Lygos_Img2_DESKTOP.png 700w" />
+            <img
+              src="/lygos/Lygos_Img2_DESKTOP.png"
+              alt='Collage of Lygos website at desktop and mobile sizes.'
+            />
+          </picture>
           <div className={styles.textBox}>
             <h2>Completely new web site to accompany a new brand</h2>
             <p>At project kickoff, I was working as a part of the technical development team of five.
@@ -61,17 +73,22 @@ export default function Portfolio() {
               and Vercel for hosting, we delivered this and more.
             </p>
           </div>
-          <div>
-            <img src='/lygos/Lygos_Img3_DESKTOP.png' alt='View of Builder Editor showing various Component Menus' />
-          </div>
+          <picture>
+            <source srcSet="/lygos/Lygos_Img3_MOBILE.png 500w" media="(max-width: 700px)" />
+            <source srcSet="/lygos/Lygos_Img3_DESKTOP.png 700w" />
+            <img
+              src="/lygos/Lygos_Img3_DESKTOP.png"
+              alt='View of Builder Editor showing various Component Menus'
+            />
+          </picture>
         </div>
 
         <div className={styles.textOnly}>
           <h2>Give it structure</h2>
           <p>The first step of this site build was digesting the finalized Figma prototypes. From there we determined
             which information was being reused throughout the site widely enough to constitute reusable data entries
-            vs which content should be one-off entries unique to pages. With this structure in place, we broke the
-            designs down into self contained components, wrote tickets, and dove into agile development.
+            vs which content should be one-off entries. We then broke the designs down into self contained
+            components, solidified the content model, wrote the tickets, and dove into agile development.
           </p>
         </div>
 
@@ -83,7 +100,7 @@ export default function Portfolio() {
               We now had a beautiful new brand and while we wanted to allow editor freedom, we didn&apos;t want anyone to be able to
               break from the design system. Instead we opted for a library of completely controlled and styled custom components.
               From smaller building blocks like inline Links, Buttons, and Informational Cards, to larger page sections like
-              Carousels and Contact Forms. All of which we developed with baked-in responsive, mobile-first design, accessibility
+              Carousels and Contact Forms. All of which were developed with baked-in responsive, mobile-first design, accessibility
               considerations and best practices, and usage guardrails.
             </p>
             <p>For example, editors can select if the section should have a grey background or a navy, but the color of the text
@@ -113,14 +130,19 @@ export default function Portfolio() {
               and Google analytics – for conversion and event tracking.
             </p>
           </div>
-          <div>
-            <img src='/lygos/Lygos_Img5_DESKTOP.png' alt='Spread of various landing pages across the Lygos website.' />
-          </div>
+          <picture>
+            <source srcSet="/lygos/Lygos_Img5_MOBILE.png 500w" media="(max-width: 700px)" />
+            <source srcSet="/lygos/Lygos_Img5_DESKTOP.png 700w" />
+            <img
+              src="/lygos/Lygos_Img5_DESKTOP.png"
+              alt='Spread of various landing pages across the Lygos website.'
+            />
+          </picture>
         </div>
 
         <div className={styles.textOnly}>
           <h2>Post-launch support</h2>
-          <p>After the initial site launch I continued to support our partnership with Lygos in both development and design roles.
+          <p>After the initial site launch I shifted into a hybrid development and design role to continue to support Lygos.
             Over the following year and a half I collaborated with the Lygos marketing team to expand site capabilities and to
             design and develop new components to support their changing needs and growing product offerings.
           </p>
@@ -129,7 +151,9 @@ export default function Portfolio() {
         <div className={styles.twoColumn}>
           <div className={styles.textBox}>
             <h2>Full spectrum support</h2>
-            <p>Working within the new brand standards and design framework, and in collaboration with Lygos leadership, I covered the full spectrum for ongoing support. I continued to contribute to the website from initial visual designs of new components, to approved functional Figma prototypes, through technical development and launch.
+            <p>Working within the new brand standards and design framework, and in collaboration with Lygos leadership, I
+              covered the full spectrum for ongoing support. I was responsible for all stages of work, from initial visual
+              designs of new components, to approved functional Figma prototypes, through technical development and launch.
             </p>
             <p>This work included:</p>
             <ul>
@@ -140,16 +164,22 @@ export default function Portfolio() {
               <li>...and more.</li>
             </ul>
           </div>
-          <div>
-            <img src='/lygos/Lygos_Img6_DESKTOP.png' alt='The new distribution map component on the Lygos site.' />
-          </div>
+          <picture>
+            <source srcSet="/lygos/Lygos_Img6_MOBILE.png 500w" media="(max-width: 700px)" />
+            <source srcSet="/lygos/Lygos_Img6_DESKTOP.png 700w" />
+            <img
+              src="/lygos/Lygos_Img6_DESKTOP.png"
+              alt='The new distribution map component on the Lygos site.'
+            />
+          </picture>
         </div>
 
         <img className={styles.fullImg} src='/lygos/Lygos_Img7_DESKTOP.png' alt='Collage of new page component designs.' />
 
         <div className={styles.textOnly}>
           <p>Beyond development and design I also lead client trainings on the Builder.io interface, explained
-            the authoring and publishing process, and recorded detailed training videos.
+            the authoring and publishing process, and recorded detailed training videos. It was a great collaboration and
+            so rewarding to be helping a truly sustainable company grow and expand their reach.
           </p>
           <p>Visit the <CustomLink text="Lygos Live Site" url="https://www.lygos.com/" external /></p>
           <br />
