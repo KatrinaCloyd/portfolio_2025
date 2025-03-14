@@ -19,7 +19,7 @@ export default function Home() {
       <main>
         <h1>Hello</h1>
         <p>Welcome!</p>
-        <p>My name is Katrina, and I&apos;m a Fontend Software Engineer with a soft spot for great design.
+        <p>My name is Katrina, and I&apos;m a Frontend Software Engineer with a soft spot for great design.
           With a background in the arts and graphic design, I have an eye for details and a drive to get them just right.
         </p>
         <p>Here you can find examples of my work with detailed information, links, and more. I work best at the intersection of
