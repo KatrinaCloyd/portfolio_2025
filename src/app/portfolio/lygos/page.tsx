@@ -6,14 +6,14 @@ import Header from "@comp/Header/Header";
 import styles from '../../../styles/page.module.scss';
 import Video from "@/components/Video/Video";
 
-export const metadata: Metadata = {
-  title: "Katrina Cloyd | Lygos Project Page",
-  description: "What I did for Lygos",
-};
-
 const projectData = PROJECT_SUMMARIES[0];
 
-export default function Portfolio() {
+export const metadata: Metadata = {
+  title: `Katrina Cloyd | ${projectData.company} Project Page`,
+  description: projectData.role || 'Frontend Developer and Designer for web site creation.',
+};
+
+export default function LygosDetailPg() {
   return (
     <div className={styles.page}>
       <Navigation />
