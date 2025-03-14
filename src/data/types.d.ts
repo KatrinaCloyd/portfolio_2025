@@ -33,7 +33,7 @@ export type ProjectSummary = {
     projectSummary: string,
     design: boolean,
     dev: boolean,
-    role: string,
+    role?: string,
     tools: string[],
 };
 
