@@ -46,7 +46,6 @@ export default function Video({ video, poster }: VideoProps) {
                 autoPlay={!reduceMotion}
                 muted
                 loop
-                playsInline
             />
             <div className={styles.status}>
                 {!!paused ? (
