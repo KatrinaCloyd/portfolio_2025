@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { PROJECT_SUMMARIES } from "@/data/ProjectSummaries";
-import Navigation from "@comp/Navigation/Navigation";
-import CustomLink from "@comp/Link/Link";
-import Header from "@comp/Header/Header";
-import styles from '../../../styles/page.module.scss';
-import Video from "@/components/Video/Video";
+// import Navigation from "@comp/Navigation/Navigation";
+// import CustomLink from "@comp/Link/Link";
+// import Header from "@comp/Header/Header";
+// import styles from '../../../styles/page.module.scss';
+// import Video from "@/components/Video/Video";
 
 const projectData = PROJECT_SUMMARIES[1];
 
