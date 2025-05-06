@@ -38,6 +38,7 @@ export default function VampDetailPg() {
                     </p>
                     <p>Can you get the high score?</p>
                     <p>Visit the <CustomLink text="Live Site" url="https://vampirematch.netlify.app/" external /></p>
+                    <p>View the code on <CustomLink text="GitHub" url="https://github.com/UniKittyCorns/MemoryCardGame" external /></p>
                 </div>
 
                 <div className={styles.twoColumn}>

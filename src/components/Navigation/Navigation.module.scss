@@ -31,6 +31,16 @@
     }
 }
 
+.homeLink {
+    outline: none;
+    box-shadow: 0 0 0 var(--maroon);
+    transition: all .2s ease-in-out;
+
+    &:focus {
+        box-shadow: 0 2px 0 var(--maroon);
+    }
+}
+
 .logo {
     max-inline-size: 150px;
     aspect-ratio: 2.35/1;
