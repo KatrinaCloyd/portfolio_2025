@@ -91,7 +91,7 @@ export default function TPDetailPg() {
             />
           </picture>
           <div className={styles.textBox}>
-            <h2>Clean up of existing code.</h2>
+            <h2>Clean up of existing code</h2>
             <p>The first step was a comprehensive audit of the existing data model, component library, and codebase.
               I led this effort, identifying opportunities for simplification, reduction in redundancies, and
               trimming of outdated options that were no longer in use. By combining related code and components
@@ -103,7 +103,7 @@ export default function TPDetailPg() {
 
         <div className={styles.twoColumn}>
           <div className={styles.textBox}>
-            <h2>Net new components.</h2>
+            <h2>Net new components</h2>
             <p>After clean up and reorganization was complete it was time for the creation of new components
               reflective of the new brand. Working from approved desktop Figma prototypes, I was responsible
               for translating the designs into responsive layouts for mobile and tablet. I then led the
@@ -121,7 +121,7 @@ export default function TPDetailPg() {
         </div>
 
         <div className={styles.textOnly}>
-          <h2>Accessibility as a top priority.</h2>
+          <h2>Accessibility as a top priority</h2>
           <p>A marketing site for a content creation agency means a lot of videos and motion. While aiming
             to create an eye-catching and exciting user experience, I also made it a personal priority to
             ensure accessibility by honoring user preferences for reduced motion on all auto play videos,
