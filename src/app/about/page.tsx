@@ -28,7 +28,7 @@ export default function About() {
             </p>
             <p>Then I became an Oregonian. I began painting, baking, jewelry making, street fair vending,
               gardening, freelancing, and pretty much trying it all. I needed a creative outlet and a combination
-              avenues led me to design.
+              of avenues led me to design.
             </p>
             <p>I became a Graphic Designer. Years of that corporate life taught me so much but I still wanted more.
               I wanted a challenge, more variance in the day to day. A job that would keep me learning... And I wanted

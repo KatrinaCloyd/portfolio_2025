@@ -56,7 +56,7 @@ export default function Navigation() {
 
     return (
         <nav className={styles.base}>
-            <Link href='/'>
+            <Link href='/' className={styles.homeLink}>
                 <picture>
                     <source srcSet="/Name_mobile.png 236w" media="(max-width: 1000px)" />
                     <source srcSet="/name.png 644w" />
