@@ -46,7 +46,7 @@ export default function VampDetailPg() {
                         <h2>My first web app</h2>
                         <p>This was the first large team project that I completed during my time at Alchemy
                             Code Lab. Built entirely with vanilla Javascript, before any of us knew anything
-                            about React or styling libraries, my team of four completed  this game in a five
+                            about React or styling libraries, my team of four completed this game in a five
                             day sprint.
                         </p>
                         <p>Yes, this is a pretty old project at this point, and there are places where this could
@@ -67,12 +67,12 @@ export default function VampDetailPg() {
                     <Video video='/vamp/Vamp_Img3_DESKTOP.mov' poster='/vamp/Vamp_Img3(still)_DESKTOP.png' />
                     <div className={styles.textBox}>
                         <h2>The flip</h2>
-                        <p>The idea for this game initially came about based on a simple css  flip animation.
-                            When I first saw this css rotate animation I was immediately inspired to make a card
-                            matching game of some kind. As a team we landed on a favorite show to build from and
+                        <p>The idea for this game initially came about based on a simple css flip animation.
+                            When I first saw this css rotate animation I was immediately inspired to make a memory card
+                            matching game of some kind. As a team we landed on a favorite show to build for inspiration and
                             the project was a go! From there we took off into planning and development.
                         </p>
-                        <p>Said flip animation prooved a bit more of a challenge for us css newbies, but eventually
+                        <p>Said flip animation proved a bit more of a challenge for us css newbies, but eventually
                             we got things flipping nice and smooth.
                         </p>
                     </div>
@@ -82,13 +82,12 @@ export default function VampDetailPg() {
                     <div className={styles.textBox}>
                         <h2>The shuffle</h2>
                         <p>The second challenge came with the concept of a deck of cards, shuffling and randomization.
-                            We wanted to make sure that even if a user chose the
-                            easy level over and over again, they would still get to see cards from the
-                            whole deck. Also, for the game play itself, we needed the cards to be randomly
-                            placed on the board.
+                            We wanted to make sure that even if a user chose the easy level over and over again, they
+                            would still get to see cards from the entire deck. Also, for the game play itself, we
+                            needed the cards to be randomly placed on the board.
                         </p>
-                        <p>This was solved with a sort function that utilized Math.random so that even the developers
-                            couldn&apos;t predict card placement on the board.
+                        <p>This was solved using a sort function that leveraged <code>Math.random()</code> ensuring that even the
+                            developers couldn&apos;t predict the card placement on the board.
                         </p>
                     </div>
                     <picture>
@@ -114,8 +113,8 @@ export default function VampDetailPg() {
                         <h2>High scores</h2>
                         <p>One of my primary contributions to the team was score handling and the high scores page.
                             Implementing local storage, I solved for saving high scores across game difficulty levels
-                            for multiple players. And of course, for players displeased with their performance, a Clear
-                            All Scores button to wipe the slate clean.
+                            for multiple players. And of course, for players displeased with their performance, a &quot;Clear
+                            All Scores&quot; button to wipe the slate clean.
                         </p>
                         <p>I must admit, I had the most fun creating the vintage video game look and feel for the page.</p>
                     </div>
@@ -128,7 +127,7 @@ export default function VampDetailPg() {
                             We added sound effects for actions and of course a win!
                         </p>
                         <p>Not to mention the wonderful illustrations. Because we were so proud of these, we had to build
-                            in a Give Up functionality so that even if you can&apos;t beat the level, you can still see all
+                            in a &quot;Give Up&quot; functionality so that even if you can&apos;t beat the level, you can still see all
                             of the cards face up! Best used on the 48 card level (whew)!
                         </p>
                         <p>Illustration credit to the lovely <CustomLink url="https://github.com/sorayamajdolashrafi" text="Soraya Majdolashrafi." external />

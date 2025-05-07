@@ -19,9 +19,9 @@ Deployed on Vercel. Using Typescript and Sass for styling.
 Aaaaand we're not done yet. Always working, always improving! 
 
 #### Sort term goals:
-- Project detail page content!
+- Additional project detail pages - I am rolling them out continually!
 - Auto play carousel on homepage of favorite projects
-- Tasteful but fun animations (mainly on the nav)
+- Tasteful but fun animations (mainly on the nav open/close)
 - Built in A11y checks
 
 #### Long term goals: 
