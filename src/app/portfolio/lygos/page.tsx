@@ -53,8 +53,8 @@ export default function LygosDetailPg() {
           <div className={styles.textBox}>
             <h2>Completely new web site to accompany a new brand</h2>
             <p>At project kickoff, I was working as a part of the technical development team of five.
-              Working hand in hand with the design team remotely collaborating, we completed this full
-              site build in under three months. Just in time for Lygos&apos; new product launch.
+              Working hand in hand with the design team in a fully remote environment, we successfully
+              completed a full site build in under three months, just in time for Lygos&apos; new product launch.
             </p>
           </div>
         </div>
@@ -64,14 +64,14 @@ export default function LygosDetailPg() {
             <h2>An easily editable website for a growing company</h2>
             <p>Because of the nature of the company, Lygos and their product offerings are always growing and
               changing. Meaning their website needed to be just as flexible to allow for that growth and change.
-              To support this need we implemented a new visual CMS, Builder.io.
+              To support this need we implemented a visual CMS, Builder.io.
             </p>
-            <p>Builder.io allows for custom components, to keep the design, look and feel of the website
-              consistent and in line with the new brand guidelines, while also allowing editors to add new
-              content, reorder page flows, edit links, and upload new assets without developer involvement.
+            <p>Builder.io supports custom components, enabling us to maintain a consistent design and user experience
+              aligned with the new brand guidelines. At the same time, it empowers editors to add new content, reorder
+              page flows, edit links, and upload assets, all without requiring developer support.
             </p>
             <p>With a tech stack including Next.js, custom React components, Typescript, Styled Components,
-              and Vercel for hosting, we delivered this and more.
+              and Vercel for hosting, we delivered a flexible, high-performance solution and more.
             </p>
           </div>
           <picture>
@@ -86,10 +86,10 @@ export default function LygosDetailPg() {
 
         <div className={styles.textOnly}>
           <h2>Give it structure</h2>
-          <p>The first step of this site build was digesting the finalized Figma prototypes. From there we determined
-            which information was being reused throughout the site widely enough to constitute reusable data entries
-            vs which content should be one-off entries. We then broke the designs down into self contained
-            components, solidified the content model, wrote the tickets, and dove into agile development.
+          <p>The first step in the site build was reviewing and analyzing the finalized Figma prototypes. From
+            there, we identified which content was reused frequently enough to warrant reusable data entries,
+            versus which pieces were better suited as one-off entries. We then broke the designs into self-contained
+            components, finalized the content model, created detailed tickets, and dove into agile development.
           </p>
         </div>
 
@@ -97,38 +97,39 @@ export default function LygosDetailPg() {
           <Video video='/lygos/Lygos_Img4_DESKTOP.mov' poster='/lygos/Lygos_Img4(still)_DESKTOP.png' />
           <div className={styles.textBox}>
             <h2>Flexible site with guardrails</h2>
-            <p>While Builder.io allows for full editor control in the interface, we decided that there needed to be limitations.
-              We now had a beautiful new brand and while we wanted to allow editor freedom, we didn&apos;t want anyone to be able to
-              break from the design system. Instead we opted for a library of completely controlled and styled custom components.
-              From smaller building blocks like inline Links, Buttons, and Informational Cards, to larger page sections like
-              Carousels and Contact Forms. All of which were developed with baked-in responsive, mobile-first design, accessibility
-              considerations and best practices, and usage guardrails.
+            <p>While Builder.io allows for full editor control in the interface, we recognized the need to establish
+              thoughtful limitations. With a beautiful new brand in place, it was important to strike a balance between
+              editorial flexibility and maintaining design consistency. To achieve this, we implemented a library of
+              fully styled, custom components, ranging from smaller building blocks like inline links, buttons, and
+              informational cards, to larger page sections like carousels and contact forms. Each component, from large
+              to small, was developed with responsive, mobile-first design, incorporating accessibility
+              best practices, and guardrails for usage.
             </p>
             <p>For example, editors can select if the section should have a grey background or a navy, but the color of the text
-              in that section is dynamically hard coded based on the selected background color for contrast needs and design
-              consistency.
+              in that section is dynamically determined based on the selected background. This ensures proper contrast for accessibility
+              while maintaining design consistency.
             </p>
           </div>
         </div>
 
         <div className={styles.textOnly}>
           <h2>Cross team collaboration</h2>
-          <p>As we neared the final launch of the refreshed site, the development team worked hand-in-hand for final
-            functional and design QA. Continuing to work in an agile approach, new tickets were created as the design
-            team requested adjustments or received final approval on assets and copy.
+          <p>As we neared the final launch of the refreshed site, the development team worked hand-in-hand with design to complete
+            functional and visual QA. Staying true to our agile workflow, we created new tickets on the fly as the design team requested
+            adjustments or finalized assets and copy.
           </p>
         </div>
 
         <div className={styles.twoColumn}>
           <div className={styles.textBox}>
             <h2>Unlimited pages</h2>
-            <p>Utilizing Next.js dynamic routes and static site generation functions this site was initially launched
-              with 14 main landing pages and 9 blog page entries. However, the site could support the creation and
-              publication of as many additional pages and blog entries as the marketing team decides to publish. All
-              without any additional development work.
+            <p>Leveraging Next.js dynamic routing and static site generation, the site was initially launched
+              with 14 main landing pages and 9 blog page entries. However, the site was built to scale, enabling
+              the marketing team to create and publish an unlimited number of additional pages and blog posts,
+              all without requiring further developer involvement.
             </p>
-            <p>Final launch also included multiple integrations, such as enabling Hubspot form embeds and tracking,
-              and Google analytics – for conversion and event tracking.
+            <p>Final launch also included several key integrations, including HubSpot form embeds with tracking and
+              Google Analytics for conversion and event monitoring.
             </p>
           </div>
           <picture>
@@ -143,8 +144,8 @@ export default function LygosDetailPg() {
 
         <div className={styles.textOnly}>
           <h2>Post-launch support</h2>
-          <p>After the initial site launch I shifted into a hybrid development and design role to continue to support Lygos.
-            Over the following year and a half I collaborated with the Lygos marketing team to expand site capabilities and to
+          <p>After the initial site launch I shifted into a hybrid development/design role to continue to support Lygos.
+            Over the following year and a half, I collaborated with the Lygos marketing team to expand site capabilities and to
             design and develop new components to support their changing needs and growing product offerings.
           </p>
         </div>
@@ -185,9 +186,9 @@ export default function LygosDetailPg() {
         </picture>
 
         <div className={styles.textOnly}>
-          <p>Beyond development and design I also lead client trainings on the Builder.io interface, explained
-            the authoring and publishing process, and recorded detailed training videos. It was a great collaboration and
-            so rewarding to be helping a truly sustainable company grow and expand their reach.
+          <p>Beyond development and design I also lead client trainings on the Builder.io interface, walked them through
+            the authoring and publishing process, and created detailed training videos. It was a rewarding collaboration,
+            and I found it truly fulfilling to help a sustainable company like Lygos grow and expand their reach.
           </p>
           <p>Visit the <CustomLink text="Lygos Live Site" url="https://www.lygos.com/" external /></p>
           <br />
