@@ -1,26 +1,26 @@
 export const BURGER = (
     <>
-        <svg viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg" role="graphics-symbol">
             <path d="M1 1l12 0" />
         </svg>
-        <svg viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg" role="graphics-symbol">
             <path d="M1 1l12 0" />
         </svg>
-        <svg viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg" role="graphics-symbol">
             <path d="M1 1l12 0" />
         </svg>
     </>
 );
 
 export const CLOSE = (
-    <svg viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" role="graphics-symbol">
         <path d="M1 1l12 12" />
         <path d="M1 13l12 -12" />
     </svg>
 );
 
 export const LINK_ARROW = (
-    <svg viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" role="graphics-symbol">
         <path d="M1 7l12 0" />
         <path d="M6 1l7 6" />
         <path d="M6 13l7 -6" />
@@ -28,7 +28,7 @@ export const LINK_ARROW = (
 );
 
 export const EXTERNAL_LINK = (
-    <svg viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" role="graphics-symbol">
         <path d="M13 11V1M13 1H3M13 1L2 12" />
     </svg>
 );
@@ -60,20 +60,20 @@ export const DEV_ICON = (
 );
 
 export const PLAY = (
-    <svg viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" role="graphics-symbol">
         <path d="M4 1l9 6l-9 6l0 -12" />
     </svg>
 );
 
 export const PAUSE = (
-    <svg viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" role="graphics-symbol">
         <path d="M3 1l0 12l2 0l0 -12l-2 0" />
         <path d="M9 1l0 12l2 0l0 -12l-2 0" />
     </svg>
 );
 
 export const FULL_SCREEN = (
-    <svg viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" role="graphics-symbol">
         <path d="M1 1l0 4l1 0l0 -3l3 0l0 -1l-4 0" />
         <path d="M1 9l0 4l4 0l0 -1l-3 0l0 -3l-1 0" />
         <path d="M9 1l4 0l0 4l-1 0l0 -3l-3 0l0 -1" />
