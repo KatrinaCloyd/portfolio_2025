@@ -20,7 +20,7 @@ export default function CustomLink({
       tabIndex={!!tabable ? 0 : -1}
     >
       {text}
-      {!!external && <span className='srX'>(opens in a new tab)</span>}
+      {!!external && <span className='sr'>(opens in a new tab)</span>}
       {!!external ? EXTERNAL_LINK : LINK_ARROW}
     </Link>
   )
