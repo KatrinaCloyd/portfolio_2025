@@ -31,7 +31,7 @@ export default function TPDetailPg() {
         </picture>
 
         <div className={styles.textOnly}>
-          <h2>Online mental health provider in need of a custom provider resource center.</h2>
+          <h2>Online mental health provider in need of a editable resource center.</h2>
           <p>Headway is an online health service connecting providers with patients. Their goal is to help
             therapists grow their practices while also helping patients find the care right for them that
             they can afford. To support partner providers, they wanted to enhance their existing website
@@ -140,10 +140,10 @@ export default function TPDetailPg() {
 
         <div className={styles.textOnly}>
           <h2>Delivered just what they needed and still growing</h2>
-          <p>In the end, we successfully delivered a robust and flexible Resource Center, built in a
+          <p>In the end, we successfully delivered a robust, dynamic, and scalable Resource Center, built in a
             blog-style format, still live and actively used today, all within a shortened timeline and
-            a constrained budget. It was fulfilling and educational to collaborate with the team at
-            Headway, and I&apos;m proud to have contributed to a company whose mission and values I
+            a constrained budget. It was fun and fulfilling to collaborate with the team at
+            Headway, I learned so much, and I&apos;m proud to have contributed to a company whose mission and values I
             genuinely believe in.</p>
           <p>Visit the <CustomLink text="Live Site" url="https://headway.co/resources/all" external /></p>
           <br />
